@@ -8,5 +8,5 @@ def run_jupyter():
 def run_electron():
     os.system("npm start")
 
-# threading.Thread(target=run_jupyter).start()
-threading.Thread(target=run_electron).start()
+threading.Thread(target=run_jupyter).start()
+# threading.Thread(target=run_electron).start()

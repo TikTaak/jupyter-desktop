@@ -3,6 +3,7 @@ const path = require('node:path')
 const {execSync} = require('child_process');
 
 let output = execSync('python get_url.py').toString();
+let run_jupy = execSync('python run.py').toString();
 
 function urlify(text) {
     var urlRegex = /(http?:\/\/[^\s]+)/g;
@@ -21,10 +22,8 @@ function createWindow () {
     }
   })
 
-//   console.log(output);
+  console.log(output);
   win.loadURL(output);
-//   win.loadURL('http://127.0.0.1:8888/tree')
-//   win.loadURL('http://localhost:8888/?token=d15daec51fda02d04178dbc92115c99e695805a12c7bd4de')
 }
 
 app.whenReady().then(() => {
