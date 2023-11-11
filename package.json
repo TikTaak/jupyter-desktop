@@ -1,0 +1,22 @@
+{
+  "name": "jupyter-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TikTaak/jupyter-electron.git"
+  },
+  "author": "tiktaak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TikTaak/jupyter-electron/issues"
+  },
+  "homepage": "https://github.com/TikTaak/jupyter-electron#readme",
+  "devDependencies": {
+    "electron": "^27.0.4"
+  }
+}
