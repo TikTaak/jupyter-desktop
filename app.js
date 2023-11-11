@@ -1,9 +1,9 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
-const {execSync} = require('child_process');
+const {execSync, exec} = require('child_process');
 
 let output = execSync('python get_url.py').toString();
-let run_jupy = execSync('python run.py').toString();
+let run_jupy = exec('python run.py').toString();
 
 function urlify(text) {
     var urlRegex = /(http?:\/\/[^\s]+)/g;
