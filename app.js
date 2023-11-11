@@ -13,6 +13,7 @@ function urlify(text) {
 
 function createWindow () {
   const win = new BrowserWindow({
+    icon: 'jupyter.ico',
     width: 1270,
     height: 720,
     webPreferences: {
